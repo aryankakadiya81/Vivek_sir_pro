@@ -5,22 +5,19 @@ const Book = (props) => {
 
     let { Name, Email, Qualification, Contect, Address, Img} = props;
     return (
-        <div className=''>
-            <div className=''>
-                <div className="card mt-2" style={{ width: "18rem" }}>
-                    <img src={Img} className="card-img-top"/>
+        <div className='d-inline-block justify-around'>
+            <div>
+                <div className="card ms-2 mt-3" style={{ width: "15.4rem" }}>
+                    <img src={Img} className="card-img-top" height={'260px'}/>
                     <ul className="list-group list-group-flush- d-flex justify-between">
                         <li className="list-group-item">Name: {Name}</li>
                         <li className="list-group-item">Email: {Email}</li>
                         <li className="list-group-item">Qualification: {Qualification}</li>
                         <li className="list-group-item">Contect: {Contect}</li>
                         <li className="list-group-item">Address: {Address}</li>
-
-
                     </ul>
                 </div>
             </div>
-
         </div>
     );
 }

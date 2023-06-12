@@ -10,11 +10,11 @@ const Book = (props) => {
                 <div className="card ms-2 mt-3" style={{ width: "15.4rem" }}>
                     <img src={Img} className="card-img-top" height={'260px'}/>
                     <ul className="list-group list-group-flush- d-flex justify-between">
-                        <li className="list-group-item">Name: {Name}</li>
-                        <li className="list-group-item">Email: {Email}</li>
-                        <li className="list-group-item">Qualification: {Qualification}</li>
-                        <li className="list-group-item">Contect: {Contect}</li>
-                        <li className="list-group-item">Address: {Address}</li>
+                        <li className="list-group-item"><b>Name:</b> {Name}</li>
+                        <li className="list-group-item"><b>Email:</b> {Email}</li>
+                        <li className="list-group-item"><b>Qualification:</b> {Qualification}</li>
+                        <li className="list-group-item"><b>Contect:</b> {Contect}</li>
+                        <li className="list-group-item"><b>Address:</b> {Address}</li>
                     </ul>
                 </div>
             </div>

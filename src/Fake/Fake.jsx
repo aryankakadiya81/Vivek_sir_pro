@@ -1,9 +1,7 @@
 import React from 'react'
 
 const Fake = (props) => {
-    // ${Img}.jpg
-
-    let { userId, id, title, completed} = props;
+      let { userId, id, title, completed} = props;
     return (
         <div className='d-inline-block justify-around'>
             <div>

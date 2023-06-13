@@ -4,8 +4,9 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import Book from './Book';
 // import Booklist from './Booklist';
+// import FakeCreate from './Fake/FakeCreate';
+import FakeCreateProduct from './Product/FakeCreateProduct';
 
-import FakeCreate from './Fake/FakeCreate';
 
 
 import "jquery"
@@ -16,10 +17,11 @@ import "bootstrap/dist/css/bootstrap.css"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FakeCreate></FakeCreate>
+<FakeCreateProduct></FakeCreateProduct>
   </React.StrictMode>
   );
   
+  // <FakeCreate></FakeCreate>
   // <Booklist/>
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

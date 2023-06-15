@@ -7,7 +7,9 @@ import reportWebVitals from './reportWebVitals';
 // import FakeCreate from './Fake/Id/FakeCreate';
 // import FakeCreateProduct from './Fake/Id/FakeCreateProduct';
 // import Listapp from './Listapp';
-import Search from './Processing a dish/Search';
+// import Search from './Processing a dish/Search';
+
+import FilterData from './Filter_json_data/FilterData';
 
 
 
@@ -20,17 +22,16 @@ import "bootstrap/dist/css/bootstrap.css"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <Search></Search>
+  <FilterData></FilterData>
   </React.StrictMode>
   
   );
   
-  // If you want to start measuring performance in your app, pass a function
-  // to log results (for example: reportWebVitals(console.log))
-  // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
   reportWebVitals();
   
   // <Booklist/>
   // <FakeCreateProduct></FakeCreateProduct>
   // <FakeCreate></FakeCreate>
   // <Listapp></Listapp>
+  // <Search></Search>

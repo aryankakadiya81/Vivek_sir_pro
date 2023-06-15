@@ -15,8 +15,8 @@ const Search = () => {
     }
     return (
         <>
-            <button type="button" class="btn btn-primary" onClick={f1}>Pizza</button>
-            <button type="button" class="btn btn-primary" onClick={f2}>Burger</button>
+            <button type="button" className="btn btn-primary" onClick={f1}>Pizza</button>
+            <button type="button" className="btn btn-primary" onClick={f2}>Burger</button>
             <Aryan form1={form}></Aryan>
         </>
     )

@@ -29,12 +29,13 @@ const FilterData = () => {
             <button type="button" className="btn btn-primary" onClick={Love}>Love</button>
             <button type="button" className="btn btn-primary" onClick={Drama}>Drama</button>
             <button type="button" className="btn btn-primary" onClick={Fraud}>Fraud</button><br/>
+            <div className='fs-1 fw-bold text-center'>{form}</div>
 
 
             {
-                Fakejson.filter((el)=>{return form == el.type}).map((el) => {
+                Fakejson.filter((el)=>{return (form == el.type)}).map((el) => {
                     return (
-                        <Aryan  id={el.id} title={el.title} type={el.type} userid={el.userId}/>
+                        <Aryan  id={el.id} img={el.img} title={el.title} type={el.type} userid={el.users} describe={el.describe} author={el.author} />
                     )
                 })
             }

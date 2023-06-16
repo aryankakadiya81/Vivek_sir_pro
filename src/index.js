@@ -9,7 +9,8 @@ import reportWebVitals from './reportWebVitals';
 // import Listapp from './Listapp';
 // import Search from './Processing a dish/Search';
 
-import FilterData from './Filter_json_data/FilterData';
+// import FilterData from './Filter_json_data/FilterData';
+import FilterData from './Filter_multiple_json_data/FilterData';
 
 
 

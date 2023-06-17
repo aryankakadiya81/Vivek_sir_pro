@@ -10,7 +10,10 @@ import reportWebVitals from './reportWebVitals';
 // import Search from './Processing a dish/Search';
 
 // import FilterData from './Filter_json_data/FilterData';
-import FilterData from './Filter_multiple_json_data/FilterData';
+// import FilterData from './Filter_multiple_json_data/FilterData';
+// import FilterData from './Filter_multiple_json_data3/FilterData';
+
+import FilterData3 from './Filtering/Filter_all_data/FilterData3';
 
 
 
@@ -23,12 +26,12 @@ import "bootstrap/dist/css/bootstrap.css"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <FilterData></FilterData>
+  <FilterData3></FilterData3>
   </React.StrictMode>
   
   );
   
-
+  
   reportWebVitals();
   
   // <Booklist/>
@@ -36,3 +39,4 @@ root.render(
   // <FakeCreate></FakeCreate>
   // <Listapp></Listapp>
   // <Search></Search>
+  // <FilterData></FilterData>

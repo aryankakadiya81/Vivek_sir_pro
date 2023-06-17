@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Fakejson from './FilterFakejson.json';
 
 
-const FilterData = () => {
+const FilterData1 = () => {
 
     let [form, setform] = useState("");
     let [form1, setform1] = useState("");
@@ -15,8 +15,8 @@ const FilterData = () => {
         setform1("Love")
     }
     function Logical_Drama() {
-        setform("Logical")
-        setform1("Drama")
+        setform1("Logical")
+        setform("Drama")
     }
     function Logical_Fraud() {
         setform("Logical")
@@ -27,8 +27,12 @@ const FilterData = () => {
         setform1("Drama")
     }
     function Love_Fraud() {
-        setform("Love")
-        setform1("Fraud")
+        setform1("Love")
+        setform("Fraud")
+    }
+    function None(){
+        setform("")
+        setform1("")
     }
 
 
@@ -37,16 +41,22 @@ const FilterData = () => {
     return (
         <>
             <div>
-                <div className='d-flex'>
-                    <div className='w-25'>
-                        <button type="button" className="btn btn-primary" onClick={Logical_Love}>Logical & Love</button><br />
-                        <button type="button" className="btn btn-primary" onClick={Logical_Drama}>Logical & Drama</button><br />
-                        <button type="button" className="btn btn-primary" onClick={Logical_Fraud}>Logical & Fraud</button><br />
-                        <button type="button" className="btn btn-primary" onClick={Love_Drama}>Love & Drama</button><br />
-                        <button type="button" className="btn btn-primary" onClick={Love_Fraud}>Love & Fraud</button><br />
-                        <br />
+                <div className='d-flex ' style={{ height: "100%"}}>
+                    <div className='w-25 bg-black'>
+                        <div className='d-flex justify-center'>
+                            <nav style={{paddingTop:"70px",paddingBottom:"200px"}}>
+                                <button type="button" className="btn btn-info mt-5 fw-bold" onClick={Logical_Love}>Logical & Love</button><br/>
+                                <button type="button" className="btn btn-info mt-5 fw-bold" onClick={Logical_Drama}>Drama & Logical</button><br/>
+                                <button type="button" className="btn btn-info mt-5 fw-bold" onClick={Logical_Fraud}>Logical & Fraud</button><br/>
+                                <button type="button" className="btn btn-info mt-5 fw-bold" onClick={Love_Drama}>Love & Drama</button><br/>
+                                <button type="button" className="btn btn-info mt-5 fw-bold" onClick={Love_Fraud}>Fraud & Love</button><br/>
+                                <button type="button" className="btn btn-info mt-5 fw-bold" onClick={None}>None</button><br/>
+
+                                <br />
+                            </nav>
+                        </div>
                     </div>
-                    <div className='w-75'>
+                    <div className='w-75 ms-3'>
                         <div className=''>
                             <div className='fs-1 fw-bold text-center'>{form}</div>
                             {form && <table className="table mt-2">
@@ -75,7 +85,7 @@ const FilterData = () => {
                             </table>}
                         </div>
 
-                        <div className=''>
+                        <div className='mt-5'>
                             <div className='fs-1 fw-bold text-center'>{form1}</div>
 
                             {form1 && <table className="table mt-2">
@@ -110,4 +120,4 @@ const FilterData = () => {
     )
 }
 
-export default FilterData
+export default FilterData1

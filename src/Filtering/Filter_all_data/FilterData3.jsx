@@ -80,16 +80,19 @@ const FilterData3 = () => {
         setform("Logical")
         setform1("Love")
         setform2("Drama")
+        setform3("")
     }
     function Logical_Love_Fraud() {
         setform("Love")
         setform1("Logical")
         setform2("Fraud")
+        setform3("")
     }
     function Love_Drama_Fraud() {
         setform("Drama")
         setform2("Fraud")
         setform1("Love")
+        setform3("")
     }
 
 
@@ -155,13 +158,13 @@ const FilterData3 = () => {
                             {form && <table className="table mt-2">
                                 <thead className="thead-dark fs-4">
                                     <tr>
-                                        <th scope="col">Id</th>
-                                        <th scope="col">Image</th>
-                                        <th scope="col">Title</th>
-                                        <th scope="col">Type</th>
-                                        <th scope="col">Author</th>
-                                        <th scope="col">Users</th>
-                                        <th scope="col">Description</th>
+                                        <th>Id</th>
+                                        <th>Image</th>
+                                        <th>Title</th>
+                                        <th>Type</th>
+                                        <th>Author</th>
+                                        <th>Users</th>
+                                        <th>Description</th>
                                     </tr>
                                 </thead>
 
@@ -183,13 +186,13 @@ const FilterData3 = () => {
                             {form1 && <table className="table mt-2">
                                 <thead className="thead-dark fs-4">
                                     <tr>
-                                        <th scope="col">Id</th>
-                                        <th scope="col">Image</th>
-                                        <th scope="col">Title</th>
-                                        <th scope="col">Type</th>
-                                        <th scope="col">Author</th>
-                                        <th scope="col">Users</th>
-                                        <th scope="col">Description</th>
+                                        <th>Id</th>
+                                        <th>Image</th>
+                                        <th>Title</th>
+                                        <th>Type</th>
+                                        <th>Author</th>
+                                        <th>Users</th>
+                                        <th>Description</th>
 
                                     </tr>
                                 </thead>
@@ -214,13 +217,13 @@ const FilterData3 = () => {
                             {form2 && <table className="table mt-2">
                                 <thead className="thead-dark fs-4">
                                     <tr>
-                                        <th scope="col">Id</th>
-                                        <th scope="col">Image</th>
-                                        <th scope="col">Title</th>
-                                        <th scope="col">Type</th>
-                                        <th scope="col">Author</th>
-                                        <th scope="col">Users</th>
-                                        <th scope="col">Description</th>
+                                        <th>Id</th>
+                                        <th>Image</th>
+                                        <th>Title</th>
+                                        <th>Type</th>
+                                        <th>Author</th>
+                                        <th>Users</th>
+                                        <th>Description</th>
 
                                     </tr>
                                 </thead>
@@ -247,13 +250,13 @@ const FilterData3 = () => {
                             {form3 && <table className="table mt-2">
                                 <thead className="thead-dark fs-4">
                                     <tr>
-                                        <th scope="col">Id</th>
-                                        <th scope="col">Image</th>
-                                        <th scope="col">Title</th>
-                                        <th scope="col">Type</th>
-                                        <th scope="col">Author</th>
-                                        <th scope="col">Users</th>
-                                        <th scope="col">Description</th>
+                                        <th>Id</th>
+                                        <th>Image</th>
+                                        <th>Title</th>
+                                        <th>Type</th>
+                                        <th>Author</th>
+                                        <th>Users</th>
+                                        <th>Description</th>
 
                                     </tr>
                                 </thead>

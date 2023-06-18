@@ -35,6 +35,7 @@ const FilterData1 = () => {
         setform1("")
     }
 
+    let f1 = 1;
 
 
 

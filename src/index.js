@@ -13,9 +13,11 @@ import reportWebVitals from './reportWebVitals';
 // import FilterData from './Filter_multiple_json_data/FilterData';
 // import FilterData from './Filter_multiple_json_data3/FilterData';
 
-import FilterData3 from './Filtering/Filter_all_data/FilterData3';
+// import FilterData3 from './Filtering/Filter_all_data/FilterData3';
 
-
+// import Search from './Processing a dish Single button/Search';
+// import Bmain from './Handle_on_click/Bmain';
+import Search from './Processing Dish Hnadle onclick/Aryan'; 
 
 
 import "jquery"
@@ -26,7 +28,8 @@ import "bootstrap/dist/css/bootstrap.css"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <FilterData3></FilterData3>
+
+  <Search></Search>
   </React.StrictMode>
   
   );

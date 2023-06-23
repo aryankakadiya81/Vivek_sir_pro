@@ -2,34 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-// import Book from './Book/Book';
-// import Booklist from './Book/Booklist';
-// import FakeCreate from './Fake/Id/FakeCreate';
-// import FakeCreateProduct from './Fake/Id/FakeCreateProduct';
-// import Listapp from './Listapp';
-// import Search from './Processing a dish/Search';
-
-// import FilterData from './Filter_json_data/FilterData';
-// import FilterData from './Filter_multiple_json_data/FilterData';
-// import FilterData from './Filter_multiple_json_data3/FilterData';
-
-// import FilterData3 from './Filtering/Filter_all_data/FilterData3';
-
-// import Search from './Processing a dish Single button/Search';
-// import Bmain from './Handle_on_click/Bmain';
-import Search from './Processing Dish Hnadle onclick/Aryan'; 
 
 
 import "jquery"
 import "@popperjs/core/dist/umd/popper"
 import "bootstrap/dist/js/bootstrap"
 import "bootstrap/dist/css/bootstrap.css"
-
+// import FilterData2 from './Data_delete_using_usestate/Big_data/FilterData2';
+// import Data_Hook from './Usestate_Hook/Data_Hook';
+import FilterData1 from './Usestate_Hook/Data_delete_using_usestate/Double_data/FilterData1';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-  <Search></Search>
+  <FilterData1></FilterData1>
   </React.StrictMode>
   
   );
@@ -37,9 +23,3 @@ root.render(
   
   reportWebVitals();
   
-  // <Booklist/>
-  // <FakeCreateProduct></FakeCreateProduct>
-  // <FakeCreate></FakeCreate>
-  // <Listapp></Listapp>
-  // <Search></Search>
-  // <FilterData></FilterData>

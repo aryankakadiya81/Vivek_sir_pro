@@ -3,7 +3,6 @@ import React from 'react'
 const Aryan = () => {
     function Burger() {
         let abc = document.getElementById("Aryan");
-
         return (
             abc.innerHTML =
 
@@ -27,7 +26,7 @@ const Aryan = () => {
     }
     function Pizza() {
         let abc = document.getElementById("Aryan");
-        
+
         return (
             abc.innerHTML =
             `<div>
@@ -62,16 +61,15 @@ const Aryan = () => {
         Data = !Data;
     }
 
-
-    return (
+    return ( 
         <>
 
             <div >
-                <button type="button" className="btn btn-primary" id='Button' onClick={mainData}>Click</button>
+                <button type="button" className="btn btn-primary" id='' onClick={mainData}>Click</button>
                 <div className='m-5'>
                     <div id='Aryan' className='w-25 fw-bold text-center border border-dark border-3 rounded'>
                     </div>
-                </div> 
+                </div>
             </div>
 
 

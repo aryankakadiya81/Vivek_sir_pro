@@ -23,20 +23,15 @@ const Tasklist3 = () => {
                 </thead>
 
                 <tbody>
-                  {tasks
-                    .filter((elem) => {
-                      return el === elem.type;
-                    })
-                    .map((elem) => {
-                      return (
-                        <Task3
-                          img={elem.img}
-                          name={elem.name}
-                          type={elem.type}
-                          price={elem.price}
-                        />
-                      );
-                    })}
+                  {tasks.filter((elem) => {return (el === elem.type); }).map((elem) => {
+                    return (
+
+
+                      <Task3 img={elem.img} name={elem.name} type={elem.type} price={elem.price} />
+
+
+                    );
+                  })}
                 </tbody>
               </table>
             </div>

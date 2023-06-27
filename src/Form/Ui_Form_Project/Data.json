@@ -1,0 +1,37 @@
+[
+    {
+        "id":1,
+        "Name":"Aryan Kakadiya",
+        "Email":"aryan@gmail.com",
+        "Location":"Mumbai, Maharashtra",
+        "Phone":9925614356
+    },
+    {
+        "id":2,
+        "Name":"Darshan Pansheriya",
+        "Email":"darshan@gmail.com",
+        "Location":"Surat, Gujarat",
+        "Phone":9927614356
+    },
+    {
+        "id":3,
+        "Name":"Shyam Rabadiya",
+        "Email":"shyam@gmail.com",
+        "Location":"Bhavnagar, Gujarat",
+        "Phone":9925679356
+    },
+    {
+        "id":4,
+        "Name":"Shubham Rabadiya",
+        "Email":"shubham@gmail.com",
+        "Location":"Surat, Gujarat",
+        "Phone":9925614106
+    },
+    {
+        "id":5,
+        "Name":"Dawood Ibrahim",
+        "Email":"dawood123@gmail.com",
+        "Location":"Karachi, Pakistan",
+        "Phone":9925614116
+    }
+]

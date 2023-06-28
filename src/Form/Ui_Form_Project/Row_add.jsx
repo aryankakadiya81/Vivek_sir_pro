@@ -1,10 +1,11 @@
 import React from 'react'
 
 const Row_add = (Props) => {
-    let {Name,Email,Location,Phone,Delete} = Props;
+    let { Name, Email, Location, Phone, Delete, Edit } = Props;
     return (
-        
+        <>
             <tr>
+
                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-md">
                     {Name}
                 </td>
@@ -18,7 +19,7 @@ const Row_add = (Props) => {
                     {Phone}
                 </td>
                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-md">
-                    <button className="bg-green-600 px-4 py-2 rounded-md text-white font-semibold tracking-wide cursor-pointer">
+                    <button className="bg-green-600 px-4 py-2 rounded-md text-white font-semibold tracking-wide cursor-pointer" onClick={Edit}>
                         Edit
                     </button>
                     <button className="bg-red-600 px-4 py-2 rounded-md text-white font-semibold tracking-wide cursor-pointer ms-2" onClick={Delete}>
@@ -26,6 +27,7 @@ const Row_add = (Props) => {
                     </button>
                 </td>
             </tr>
+        </>
     )
 }
 

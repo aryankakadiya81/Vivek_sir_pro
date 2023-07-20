@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Main_Routes from './Routing/Main_Routes';
+import Main_Routes from './Routing/HashRouter/Main_Routes';
 // import Cart_logic from './UseEffect_Hook/Cart_add_item/Cart_logic';
 // import Timer from './Timer';
 // import Effect from './Effect';

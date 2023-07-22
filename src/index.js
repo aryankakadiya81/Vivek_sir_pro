@@ -2,10 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Main_Routes from './Routing/HashRouter/Main_Routes';
-// import Cart_logic from './UseEffect_Hook/Cart_add_item/Cart_logic';
-// import Timer from './Timer';
-// import Effect from './Effect';
+import Main_Routes from './Routing/Usenavigate/Main_Routes';
 
 
 // import "jquery"
@@ -18,14 +15,14 @@ import Main_Routes from './Routing/HashRouter/Main_Routes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  
+
   <React.StrictMode>
-  <Main_Routes></Main_Routes>
+    <Main_Routes></Main_Routes>
   </React.StrictMode>
-  
-  );
-  
-  
- 
-  reportWebVitals();
-  
+
+);
+
+
+
+reportWebVitals();
+

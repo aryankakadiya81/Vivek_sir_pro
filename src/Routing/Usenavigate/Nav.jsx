@@ -7,17 +7,17 @@ const Nav = () => {
     <>
       <div className='flex justify-around mx-96 px-56'>
         <div className='mt-2 hover:scale-110'>
-          <button className='border-2 font-bold border-black m-2 p-1 hover:text-white hover:bg-black' onClick={() => { Navi("/") }}>Home</button>
+          <button className='border-2 font-bold bg-black text-white border-black m-2 p-1 hover:text-black hover:bg-white' onClick={() => { Navi("/") }}>Home</button>
         </div>
 
         <div className='mt-2 hover:scale-110'>
 
-          <button className='border-2 font-bold border-black m-2 p-1 hover:text-white hover:bg-black' onClick={() => { Navi("/About") }}>About</button>
+          <button className='border-2 font-bold bg-black text-white border-black m-2 p-1 hover:text-black hover:bg-white' onClick={() => { Navi("/About") }}>About</button>
         </div>
 
         <div className='mt-2 hover:scale-110'>
 
-          <button className='border-2 font-bold border-black m-2 p-1 hover:text-white hover:bg-black' onClick={() => { Navi("/Contect") }}>Contact</button>
+          <button className='border-2 font-bold bg-black text-white border-black m-2 p-1 hover:text-black hover:bg-white' onClick={() => { Navi("/Contect") }}>Contact</button>
 
         </div>
       </div>

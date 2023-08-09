@@ -29,7 +29,7 @@ const Understand_Usecallback = () => {
 
   return (
     <>
-      <div className='text-2xl'>
+      <div className='text-2xl bg-slate-200 h-screen'>
         <div className='flex justify-center'>
           <div className='font-bold'>Even + Odd : </div>
           <div className='ms-5'>{Count} + {Count1} = {Count+Count1}</div>

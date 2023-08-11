@@ -2,7 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import App from './Routing_task/App';
+
+import Explain from './Hooks/UseMemo_Hook/Explain';
+
+
 
 
 
@@ -18,13 +21,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   <React.StrictMode>
-  <App></App>
+    <Explain></Explain>
   </React.StrictMode>
-  
-  );
-  
-  
-  
-  reportWebVitals();
-  
-  
+
+);
+
+
+
+reportWebVitals();
+

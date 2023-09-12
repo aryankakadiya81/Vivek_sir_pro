@@ -48,33 +48,35 @@ const Main_ui = () => {
                 ele.Location = Location;
 
             }
-            return 1;
+            return true;
         }))
     }
 
-    let [NewData, setNewData] = useState([]);
+
     function Create() {
-        
-        setNewData([{
+        setData1([{
             "Name": `${Name}`,
             "Email": `${Email}`,
             "Location": `${Location}`,
             "Phone": Phone
         }, ...Data1]);
-        
-        setData1(NewData);
     };
 
 
-    // let [Search, setSearch] = useState("")
-    // function Filter(e){
-    //     setSearch(e.target.value)
-    // }
+    let [Search, setSearch] = useState("")
+    let [Search1, setSearch1] = useState("")
+
+    function Filter(e) {
+        setSearch1(e.target.value)
+    }
+    function Searchbtn()
+    {
+        setSearch(Search1)
+    }
+
+
     function Clearlist() {
-        // console.log("befo", NewData.length);
         setData1([])
-        setNewData([])
-        // console.log("after", NewData.length);
     }
     return (
         <>
@@ -132,7 +134,10 @@ const Main_ui = () => {
 
                         <h2 className="text-black font-bold text-3xl">Products</h2>
                         <div className="flex items-center justify-between">
-                            <input className="bg-gray-50 outline-none ml-1 block border-2 p-2 pr-8 rounded-lg m-3" type="text" placeholder="Search..." />
+                            <div>
+                                <input className="bg-gray-50 outline-none ml-1 block border-2 p-2 pr-8 rounded-lg m-3" type="text" placeholder="Search..." value={Search1} onChange={Filter} />
+                                <button onClick={Searchbtn}>Search</button>
+                            </div>
                             <div className="">
                                 <button className="bg-indigo-600 hover:bg-white hover:text-indigo-600 hover:border-indigo-600 border-2 px-4 py-2 rounded-md text-white font-bold" onClick={Create}>
                                     Create
@@ -163,8 +168,15 @@ const Main_ui = () => {
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    {
+                                        Data1.filter((el) => { return (el.Name === Search) }).map((el) => {
+                                            return (
+                                                <Rowadd Name={el.Name} Email={el.Email} Location={el.Location} Phone={el.Phone} Delete={() => { return Delete(el.Email) }} Edit={() => { return (Edit(el.Name)) }}></Rowadd>
+                                            )
+                                        })
+                                    }
 
-                                        {Data1.map((el) => {
+                                        {Search1 === "" && Data1.map((el) => {
                                             return (
                                                 <Rowadd Name={el.Name} Email={el.Email} Location={el.Location} Phone={el.Phone} Delete={() => { return Delete(el.Email) }} Edit={() => { return (Edit(el.Name)) }}></Rowadd>
                                             )

@@ -5,7 +5,6 @@ export let PRODUCT_DATA = (DATA = [], Action) => {
             // ...DATA,
             return [...Action.DATA];
 
-
         case "SET_PRODUCT":
             return [...Action.DATA];
 

@@ -4,8 +4,8 @@ import { PRODUCT_LIST } from '../Type';
 function* getProducts(){
      console.log("call api here");
      let data = yield fetch('http://localhost:3002/aryan');
-     data = yield data.json()
-     console.log("action called" , data);
+     data = yield data.json();
+     console.log("action called", data);
 }
 
 

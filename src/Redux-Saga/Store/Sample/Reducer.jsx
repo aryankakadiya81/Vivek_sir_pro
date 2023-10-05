@@ -1,4 +1,4 @@
-export let CART_DATA = (DATA = [], Action) => {
+export let SAMPLE_DATA = (DATA = [], Action) => {
     switch(Action.type)
     {
         case "ADD_TO_CART":

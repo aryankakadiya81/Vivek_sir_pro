@@ -1,4 +1,4 @@
-export let ADD_TO_CART = (DATA) => {
+export let ADD_TO_CART = (DATA,id) => {
     // console.log("Action Called",DATA);
     return {
         type:"ADD_TO_CART",

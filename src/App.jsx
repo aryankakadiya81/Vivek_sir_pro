@@ -1,9 +1,11 @@
 import React from 'react'
-import { Provider } from 'react-redux'
+// import Get from './Axios/Get/Get'
+import Post from './Axios/Post/Post'
+// import { Provider } from 'react-redux'
 // import Store from './Data_Fatch_Live_Api/Store'
-import Store from './Redux-Saga/Store/Store'
-import Main from './Redux-Saga/Main'
-import Second from './Redux-Saga/Second'
+// import Store from './Redux-Saga/Store/Store'
+// import Export from './Redux-Saga/Export'
+
 // import Container from './Data_Fatch_Live_Api/Container'
 
 
@@ -13,12 +15,7 @@ let Apps = () => {
   return (
     <>
 
-      <Provider store={Store}>
-      <Second></Second>
-
-        <Main></Main>
-
-      </Provider>
+      <Post></Post>
 
     </>
   )
@@ -27,6 +24,11 @@ let Apps = () => {
 
 // react redux thunk - saga - toolkit
 // <HookContainer></HookContainer>
+
+// <Provider store={Store}>
+//       <Export></Export>
+
+//       </Provider>
 
 
 export default Apps

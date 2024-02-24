@@ -16,7 +16,7 @@ const Reducer = (state = infi , action) => {
         ...state,
         Numbers : state.Numbers - 1
     }
-    default : return state
+    default : return state 
   }
 }
 
